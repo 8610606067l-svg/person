@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Personal Finance Calculator</title>
+<link rel="stylesheet" href="persnal_finance.css">
+</head>
+<body>
+<div class="container">
+<h1>Personal Finance Calculator</h1>
+<p class="subtitle">Calculate your monthly expenses andsavings</p>
+<div class="form-section">
+<label for="income">Monthly Income</label>
+<input type="number" id="income" placeholder= "Enter yourincome"
+>
+<label for="rent">Rent</label>
+<input type="number" id="rent" placeholder="Enter rentamount"
+>
+<label for="food">Food Expenses</label>
+<input type="number" id="food" placeholder="Enter foodexpenses"
+>
+<label for="travel">Travel Expenses</label>
+<input type="number" id="travel" placeholder="Enter travelexpenses"
+>
+<label for="other">Other Expenses</label>
+<input type="number" id="other" placeholder="Enter otherexpenses"
+>
+<button onclick="calculateFinance()">Calculate</button>
+</div>
+<div class="result-section">
+<h2>Financial Summary</h2>
+<div class="result">
+<span>Total Expenses</span>
+<strong id="totalExpenses">20</strong>
+</div>
+<div class="result">
+<span>Remaining Balance</span>
+<strong id="remainingBalance">0</strong>
+</div>
+<div class="result">
+<span>Savings Percentage</span>
+<strong id="savingsPercentage">0%</strong>
+</div>
+<p id="message"></p>
+</div>
+</div>
+<script src="persnal_finance.js"></script>
+</body>
+</html>
